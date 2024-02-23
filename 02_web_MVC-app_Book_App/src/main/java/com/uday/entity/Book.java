@@ -15,6 +15,7 @@ public class Book {
 	private Integer bookId;
 	private String bookName;
 	private Double bookprice;
+	private String activeSW;
 
 	public Integer getBookId() {
 		return bookId;
@@ -42,7 +43,16 @@ public class Book {
 
 	@Override
 	public String toString() {
-		return "Book [bookId=" + bookId + ", bookName=" + bookName + ", bookprice=" + bookprice + "]";
+		return "Book [bookId=" + bookId + ", bookName=" + bookName + ", bookprice=" + bookprice + ", activeSW="
+				+ activeSW + "]";
+	}
+
+	public String getActiveSW() {
+		return activeSW;
+	}
+
+	public void setActiveSW(String activeSW) {
+		this.activeSW = activeSW;
 	}
 
 }
